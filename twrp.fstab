@@ -1,0 +1,15 @@
+# X526 fstab By Rishabh Rao
+# Mount Point	FS-Type		Device										Flags
+/system			ext4		/dev/block/bootdevice/by-name/system		flags=display="System";canbewiped;backup=1;wipeingui
+/data			ext4		/dev/block/bootdevice/by-name/userdata		flags=display="Data";length=-16384;canbewiped;backup=1;wipeingui;wipeduringfactoryreset
+/cache			ext4		/dev/block/bootdevice/by-name/cache			flags=display="Cache";canbewiped;backup=1;wipeingui;wipeduringfactoryreset
+/cust			ext4		/dev/block/bootdevice/by-name/cust			flags=display="Cust";canbewiped;backup=1
+/recovery		emmc		/dev/block/bootdevice/by-name/recovery		flags=display="Recovery";canbewiped;backup=1
+/boot			emmc		/dev/block/bootdevice/by-name/boot			flags=display="Boot";canbewiped;backup=1;wipeingui
+/misc			emmc		/dev/block/bootdevice/by-name/misc			flags=display="Misc";canbewiped;backup=1
+/efs1			emmc		/dev/block/bootdevice/by-name/modemst1		flags=display="EFS1";backupname="EFS";canbewiped;backup=1
+/efs2			emmc		/dev/block/bootdevice/by-name/modemst2		flags=display="EFS2";canbewiped;subpartitionof=/efs1;backup=1
+/firmware		vfat		/dev/block/bootdevice/by-name/modem			flags=display="Firmware";mounttodecrypt;canbewiped;backup=1
+/persist		ext4		/dev/block/bootdevice/by-name/persist		flags=display="Persist";canbewiped;backup=1
+/sdcard			vfat		/dev/block/mmcblk1p1						flags=display="SDCard";storage;settingsstorage;canbewiped;wipeingui
+/usb-otg		auto		/dev/block/sda1								flags=display="USB OTG";storage;removable;canbewiped;wipeingui
