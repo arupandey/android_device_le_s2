@@ -1,4 +1,4 @@
-ifneq ($(filter X526,$(TARGET_DEVICE)),)
+ifneq ($(filter s2,$(TARGET_DEVICE)),)
 
 LOCAL_PATH := $(call my-dir)
 
