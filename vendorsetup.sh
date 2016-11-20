@@ -1,1 +1,1 @@
-add_lunch_combo omni_X526-userdebug
+add_lunch_combo omni_s2-userdebug
