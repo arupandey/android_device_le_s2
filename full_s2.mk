@@ -2,7 +2,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device.mk
-$(call inherit-product, device/LeEco/X526/device.mk)
+
 
 # Specifying timezone
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
